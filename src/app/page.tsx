@@ -72,7 +72,7 @@ export default function Home() {
                 />
               </div>
 
-              <p>I am a Software Developer based in Montreal,<br></br> and I@aposm very passionate and dedicated towards my work. </p>
+              <p>I am a Software Developer based in Montreal,<br></br> and I am very passionate and dedicated towards my work. </p>
               <button className="bg-gray-700 text-white flex items-center my-20 rounded-lg px-7 py-5">Say Hello <FaRegPaperPlane className="ml-4" /></button>
               <h2 className="flex items-center">Scroll Down <FaArrowDownLong /></h2>
             </div>
