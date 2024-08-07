@@ -11,6 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { PiPenNibStraightLight } from "react-icons/pi";
+import Skills from './skills'
 
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
         <title>Saheb Chandok</title>
       </Head>
       <main>
-        <section className="text-gray-600">
+        <section className="text-gray-600 border-b-2 border-gray-200 mx-28 ">
           <nav className="py-5 px-10 mb-12 flex justify-between border-b-2 border-gray-200 w-full fixed top-0 left-0 bg-gray-50">
             <h1 className="text-xl text-gray-600">{"{developedbysaheb}"}</h1>
             <ul className="flex flex-col lg:flex-row gap-x-8 items-center text-lg">
@@ -48,7 +49,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="pt-32">
+            <div className="pt-20">
               <h2 className="flex items-center text-4xl font-extrabold text-gray-700 pt-20">Saheb Chandok <IoMdHand className="text-yellow-500" /></h2>
 
 
@@ -76,11 +77,15 @@ export default function Home() {
               <button className="bg-gray-700 text-white flex items-center my-20 rounded-lg px-7 py-5">Say Hello <FaRegPaperPlane className="ml-4" /></button>
               <h2 className="flex items-center">Scroll Down <FaArrowDownLong /></h2>
             </div>
-            <div className="pt-32 content-center">
-              <Image src="/picture.png" alt="Not Found" width={500} height={500} className="w-100 h-120 " />
+            <div className="pt-10 mr-20 content-center">
+              <Image src="/picture.png" alt="Not Found" width={500} height={500} className="" />
             </div>
+            
           </div>
+          {/* <Image src="/picture1.png" alt="Not Found" width={500} height={500} className="w-full h-100 " /> */}
         </section>
+        {/* Add the Skills component here */}
+        <Skills />
       </main>
     </div>
 
