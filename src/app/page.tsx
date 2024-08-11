@@ -11,7 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { PiPenNibStraightLight } from "react-icons/pi";
-import Skills from './skills'
+import Skills from '../components/skills'
 
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
         <section className="text-gray-600 border-b-2 border-gray-200 mx-28">
           <nav className="py-5 px-10 mb-12 flex justify-between  w-full fixed top-0 left-0 bg-gray-50">
             <h1 className="text-xl text-gray-600">{"{developedbysaheb}"}</h1>
-            <ul className="flex flex-col lg:flex-row gap-x-8 items-center text-lg">
+            <ul className="flex flex-row gap-x-8 items-center text-lg">
               <li><BsFillMoonStarsFill className="cursor-pointer text-xl" /></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Skills</a></li>
@@ -82,7 +82,6 @@ export default function Home() {
             </div>
             
           </div>
-          {/* <Image src="/picture1.png" alt="Not Found" width={500} height={500} className="w-full h-100 " /> */}
         </section>
         {/* Add the Skills component here */}
         <Skills />
