@@ -1,6 +1,6 @@
 function Skills() {
   return (
-    <div className="container mx-auto px-4 py-8 mt-10">
+    <div className="container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1679px]">
       <h2 className="text-4xl font-bold text-center mb-8 text-gray-700">Skills</h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
