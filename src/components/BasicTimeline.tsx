@@ -4,15 +4,18 @@ import Image from "next/image";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 
+// Type for the ID parameter
+type ModalId = number | null;
+
 export default function BasicTimeline() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up('lg'));
 
   // State to track the currently open modal
-  const [openModalId, setOpenModalId] = useState(null);
+  const [openModalId, setOpenModalId] = useState<ModalId>(null);
 
   // Function to open a specific modal
-  const openModal = (id) => {
+  const openModal = (id: number) => {
     setOpenModalId(id);
   };
 
@@ -29,7 +32,7 @@ export default function BasicTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <div id="open-modal-btn" className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 justify-start w-[500px] shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(1)}>
+          <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 justify-start w-[500px] shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(1)}>
             <div className='items-center my-auto'>
               <Image src="/concordia.png" alt="Not Found" width={500} height={700} className="w-[50px] h-[50px]" />
             </div>
@@ -62,7 +65,7 @@ export default function BasicTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <div className='flex justify-end'>
-            <div id="open-modal-btn" className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 w-[500px] shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(2)}>
+            <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 w-[500px] shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(2)}>
               <div className='items-center my-auto'>
                 <Image src="/Oracle.png" alt="Not Found" width={500} height={700} className="w-[70px] h-[70px] rounded-full" />
               </div>
@@ -95,7 +98,7 @@ export default function BasicTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <div id="open-modal-btn" className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 justify-start w-[500px] shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(3)}>
+          <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 justify-start w-[500px] shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(3)}>
             <div className='items-center my-auto'>
               <Image src="/aic.png" alt="Not Found" width={500} height={700} className="w-[70px] h-[70px]" />
             </div>
@@ -128,7 +131,7 @@ export default function BasicTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <div className='flex justify-end'>
-            <div id="open-modal-btn" className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 w-[500px] shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(4)}>
+            <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 w-[500px] shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(4)}>
               <div className='items-center my-auto'>
                 <Image src="/IIIT.png" alt="Not Found" width={500} height={700} className="w-[70px] h-[70px]" />
               </div>
@@ -138,9 +141,8 @@ export default function BasicTimeline() {
                 <p>June 2018 - July 2022</p>
               </div>
             </div>
-          </div>
 
-          {openModalId === 4 && (
+            {openModalId === 4 && (
             <div id="modal-wrapper" className='fixed z-10 inset-0'>
               <div className='flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-20 transition-all'>
                 <div className='flex flex-col items-center justify-between bg-white p-10 rounded max-w-[750px]'>
@@ -153,6 +155,7 @@ export default function BasicTimeline() {
               </div>
             </div>
           )}
+          </div>
         </TimelineContent>
       </TimelineItem>
     </Timeline>
