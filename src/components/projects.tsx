@@ -49,7 +49,7 @@ const Projects = () => {
                             <h1 className='text-gray-700 font-bold text-2xl mt-5'>Domination Game Project</h1>
                             <p className='text-gray-700 py-5'>Sept 2023 - Dec 2023</p>
 
-                            <p>Created a console-based Warzone game leveraging Java's collections and OOP concepts. Employed design patterns like State, Command.</p>
+                            <p>Created a console-based Warzone game leveraging &quot;Java&apos;s collections and OOP concepts. Employed design patterns like State, Command.</p>
                             <div className='flex flex-row'>
                                 <a className="bg-blue-500 my-5 text-white flex items-center rounded-2xl px-7 py-5 hover:cursor-pointer" onClick={() => window.open('https://github.com/SahebChandok/warzone', '_blank')}>View Code</a>
                             </div>
@@ -62,7 +62,7 @@ const Projects = () => {
                             <Image src="/IEEE-Logo.jpg" alt="Not Found" width={1200} height={1200} className="px-5 py-10 lg:py-1" />
                         </div>
                         <div className='w-full px-7'>
-                            <h1 className='text-gray-700 font-bold text-2xl mt-5'>Cyber attack detection using ML</h1>
+                            <h1 className='text-gray-700 font-bold text-2xl mt-5'>Cyber attack detection</h1>
                             <p className='text-gray-700 py-5'>January 2024 - April 2024</p>
 
                             <p> The aim was to create a system capable of predicting malicious activities by leveraging machine learning algorithms.</p>
