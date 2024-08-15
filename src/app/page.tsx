@@ -13,6 +13,7 @@ import { FaGithub } from "react-icons/fa6";
 import { PiPenNibStraightLight } from "react-icons/pi";
 import Skills from '../components/skills'
 import Experience from "@/components/experience";
+import Projects from "@/components/projects";
 
 
 export default function Home() {
@@ -92,6 +93,9 @@ export default function Home() {
 
         {/* Experience Component */}
         <Experience />
+
+        {/* Projects Component */}
+        <Projects />
       </main>
     </div>
 

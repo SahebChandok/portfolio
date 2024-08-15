@@ -25,7 +25,7 @@ export default function BasicTimeline() {
   };
 
   return (
-    <Timeline position={matches ? 'alternate' : 'right'}>
+    <Timeline position={matches ? 'alternate' : undefined}>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot />
