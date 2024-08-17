@@ -14,6 +14,7 @@ import { PiPenNibStraightLight } from "react-icons/pi";
 import Skills from '../components/skills'
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
+import Interest from "@/components/interest";
 
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
         <title>Saheb Chandok</title>
       </Head>
       <main>
-        <section className="text-gray-600 border-b-2 border-gray-200 mx-28 max-w-[1679px]">
+        <section className="text-gray-600 border-b-2 border-gray-200 mx-28 max-w-[1400px]">
           <nav className="py-5 px-10 mb-12 flex justify-between  w-full fixed top-0 left-0 bg-gray-50">
             <h1 className="text-xl text-gray-600">{"{developedbysaheb}"}</h1>
             <ul className="hidden lg:flex flex-row gap-x-8 items-center text-lg">
@@ -96,6 +97,9 @@ export default function Home() {
 
         {/* Projects Component */}
         <Projects />
+
+        {/*Interests Component*/}
+        <Interest />
       </main>
     </div>
 

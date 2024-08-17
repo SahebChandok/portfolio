@@ -4,7 +4,7 @@ import Image from "next/image"
 const Projects = () => {
     return (
         <div>
-            <div className='container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1679px]'>
+            <div className='container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1400px]'>
                 <h2 className="text-4xl font-bold text-center mb-8 text-gray-700">Projects</h2>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
                     <div className='max-w-[1100px] mx-auto flex flex-col lg:flex-row bg-gray-100 rounded-lg border-gray-300 border-2 mt-5 hover:shadow-2xl transition-shadow duration-300 shadow-lg'>
@@ -18,7 +18,7 @@ const Projects = () => {
                             <p>I have successfully developed and hosted a dynamic personal portfolio website utilizing Next.js and Tailwind CSS.</p>
                             <div className='flex flex-row'>
                                 <a className="bg-blue-500 my-5 text-white flex items-center rounded-2xl px-7 py-5 hover:cursor-pointer" onClick={() => window.open('https://github.com/SahebChandok/portfolio', '_blank')}>View Code</a>
-                                <a className=" bg-white my-5 mx-10 flex items-center rounded-2xl px-7 py-3 text-black border-2 border-blue-500 hover:cursor-pointer" onClick={() => window.open('https://saheb-chandok.vercel.app/', '_blank')}>View Live</a>
+                                <a className=" bg-white my-5 ml-5 flex items-center rounded-2xl px-7 py-3 text-black border-2 border-blue-500 hover:cursor-pointer" onClick={() => window.open('https://saheb-chandok.vercel.app/', '_blank')}>View Live</a>
                             </div>
                         </div>
 
@@ -35,7 +35,7 @@ const Projects = () => {
                             <p>Developed a Chrome extension for Jira that streamlines user story management with voice commands. </p>
                             <div className='flex flex-row'>
                                 <a className="bg-blue-500 my-5 text-white flex items-center rounded-2xl px-7 py-5 hover:cursor-pointer" onClick={() => window.open('https://github.com/SahebChandok/jira-voice-assistant', '_blank')}>View Code</a>
-                                <a className=" bg-white my-5 mx-10 flex items-center rounded-2xl px-7 py-3 text-black border-2 border-blue-500 hover:cursor-pointer" onClick={() => window.open('https://chromewebstore.google.com/detail/jira-voice-assistant/pmkkodnnklbefedoioocpgnccmnibfni?pli=1', '_blank')}>View Live</a>
+                                <a className=" bg-white my-5 ml-5 flex items-center rounded-2xl px-7 py-3 text-black border-2 border-blue-500 hover:cursor-pointer" onClick={() => window.open('https://chromewebstore.google.com/detail/jira-voice-assistant/pmkkodnnklbefedoioocpgnccmnibfni?pli=1', '_blank')}>View Live</a>
                             </div>
                         </div>
 
