@@ -32,7 +32,7 @@ export default function BasicTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 justify-start w-[500px] shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(1)}>
+          <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 justify-start w-[500px] shadow-lg hover:shadow-2xl transition-shadow duration-300 ' onClick={() => openModal(1)}>
             <div className='items-center my-auto'>
               <Image src="/concordia.png" alt="Not Found" width={500} height={700} className="w-[50px] h-[50px]" />
             </div>

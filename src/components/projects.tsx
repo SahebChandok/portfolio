@@ -6,7 +6,7 @@ const Projects = () => {
         <div>
             <div className='container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1400px]'>
                 <h2 className="text-4xl font-bold text-center mb-8 text-gray-700">Projects</h2>
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mt-20'>
                     <div className='max-w-[1100px] mx-auto flex flex-col lg:flex-row bg-gray-100 rounded-lg border-gray-300 border-2 mt-5 hover:shadow-2xl transition-shadow duration-300 shadow-lg'>
                         <div className='w-full flex items-center'>
                             <Image src="/portfolio.png" alt="Not Found" width={1200} height={1200} className="px-5 py-10 lg:py-1" />
@@ -46,7 +46,7 @@ const Projects = () => {
                             <Image src="/image.png" alt="Not Found" width={1200} height={1200} className="px-5 py-10 lg:py-1" />
                         </div>
                         <div className='w-full px-7'>
-                            <h1 className='text-gray-700 font-bold text-2xl mt-5'>Domination Game Project</h1>
+                            <h1 className='text-gray-700 font-bold text-2xl mt-5'>Domination Game</h1>
                             <p className='text-gray-700 py-5'>Sept 2023 - Dec 2023</p>
 
                             <p>Created a console-based Warzone game leveraging &quot;Java&apos;s collections and OOP concepts. Employed design patterns like State, Command.</p>
