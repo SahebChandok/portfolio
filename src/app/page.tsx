@@ -27,7 +27,7 @@ export default function Home() {
       <main>
         <div className="text-gray-600 border-b-2 border-gray-200 max-w-[1400px] mx-auto">
           <nav className="py-5 px-10 mb-12 flex justify-between w-screen fixed top-0 left-0 bg-gray-50">
-            <h1 className="text-xl text-gray-600">{"{developedbysaheb}"}</h1>
+            <h1 className="text-lg md:text-xl text-gray-600">{"{developedbysaheb}"}</h1>
             <ul className="hidden lg:flex flex-row gap-x-8 items-center text-lg">
               <li><BsFillMoonStarsFill className="cursor-pointer text-xl" /></li>
               <li><a href="#">About</a></li>
@@ -90,7 +90,7 @@ export default function Home() {
               </button>
               
               <p className="md:hidden">Connect With Me !</p>
-              <div className="md:hidden flex flex-row items-center">
+              <div className="md:hidden flex flex-row items-center mt-10">
                   <div className="pr-5 text-3xl">
                   
                       <Link href="https://www.linkedin.com/in/saheb-singh-chandok/"><FaLinkedinIn /></Link>
@@ -108,11 +108,11 @@ export default function Home() {
                   </div>
               </div>
 
-              <h2 className="flex items-center mt-28">Scroll Down <FaArrowDownLong /></h2>
+              <h2 className="hidden md:flex md:flex-row items-center mt-28">Scroll Down <FaArrowDownLong /></h2>
             </div>
 
-            <div className="content-center">
-              <Image src="/picture.png" alt="Not Found" width={500} height={700} className="w-[580px] h-[750px]" />
+            <div className="flex justify-center content-center">
+              <Image src="/picture.png" alt="Not Found" width={500} height={700} className="w-[400px] h-[500px] md:w-[580px] md:h-[750px]" />
             </div>
           </div>
         </div>

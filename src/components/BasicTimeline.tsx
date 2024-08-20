@@ -15,7 +15,7 @@ export default function BasicTimeline() {
   const [openModalId, setOpenModalId] = useState<ModalId>(null);
 
   // Function to open a specific modal
-  const openModal = (id: number) => {
+  const openModal = (id: React.SetStateAction<ModalId>) => {
     setOpenModalId(id);
   };
 
@@ -24,9 +24,11 @@ export default function BasicTimeline() {
     setOpenModalId(null);
   };
 
+
+
   return (
     <Timeline position={matches ? 'alternate' : undefined}>
-      <TimelineItem>
+      <TimelineItem className='pl-0 pr-0 ml-0 mr-0'>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
@@ -58,7 +60,7 @@ export default function BasicTimeline() {
           )}
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem>
+      <TimelineItem className='pl-0 pr-0 ml-0 mr-0'>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
@@ -92,7 +94,7 @@ export default function BasicTimeline() {
           )}
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem>
+      <TimelineItem className='pl-0 pr-0 ml-0 mr-0'>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
@@ -124,7 +126,7 @@ export default function BasicTimeline() {
           )}
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem>
+      <TimelineItem className='pl-0 pr-0 ml-0 mr-0'>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
@@ -143,18 +145,18 @@ export default function BasicTimeline() {
             </div>
 
             {openModalId === 4 && (
-            <div id="modal-wrapper" className='fixed z-10 inset-0'>
-              <div className='flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-20 transition-all'>
-                <div className='flex flex-col items-center justify-between bg-white p-10 rounded max-w-[750px]'>
-                  <h3 className='text-2xl font-medium tracking-wider'>Bachelor of Engineering in Information Technology</h3>
-                  <p className='my-8 text-xl'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, tempore consequuntur nihil vitae obcaecati distinctio minima nemo necessitatibus assumenda dolorum labore architecto temporibus veniam dicta mollitia, et voluptas commodi. Quidem.
-                  </p>
-                  <button id="close-modal-btn" className='bg-red-500 text-white py-3 px-10 rounded' onClick={closeModal}>Close</button>
+              <div id="modal-wrapper" className='fixed z-10 inset-0'>
+                <div className='flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-20 transition-all'>
+                  <div className='flex flex-col items-center justify-between bg-white p-10 rounded max-w-[750px]'>
+                    <h3 className='text-2xl font-medium tracking-wider'>Bachelor of Engineering in Information Technology</h3>
+                    <p className='my-8 text-xl'>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, tempore consequuntur nihil vitae obcaecati distinctio minima nemo necessitatibus assumenda dolorum labore architecto temporibus veniam dicta mollitia, et voluptas commodi. Quidem.
+                    </p>
+                    <button id="close-modal-btn" className='bg-red-500 text-white py-3 px-10 rounded' onClick={closeModal}>Close</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
+            )}
           </div>
         </TimelineContent>
       </TimelineItem>

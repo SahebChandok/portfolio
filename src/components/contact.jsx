@@ -51,10 +51,10 @@ export default function Contact() {
     <div className='container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1400px]'>
       <h2 className='text-4xl font-bold text-center mb-8 text-gray-700'>Contact Me</h2>
       <div className='flex flex-row justify-between'>
-        <div>
+        <div className='hidden lg:block'>
           <Image src="./contactImg.svg" alt="Not Found" width={500} height={700} className="w-[580px] h-[600px]" />
         </div>
-        <div className='w-1/2 mt-36'>
+        <div className='w-1/2 mt-36 md:mx-auto sm:mx-auto'>
           <form onSubmit={onSubmit} className='flex flex-col'>
             <div className='flex justify-between'>
               <input type="text" name="name" placeholder='First Name' className=' h-10 px-5 w-full border-2' required />
