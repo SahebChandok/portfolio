@@ -11,6 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { PiPenNibStraightLight } from "react-icons/pi";
+import { FiAlignJustify } from "react-icons/fi";
 import Skills from '../components/skills'
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
@@ -26,17 +27,19 @@ export default function Home() {
       </Head>
       <main>
         <div className="text-gray-600 border-b-2 border-gray-200 max-w-[1400px] mx-auto">
-          <nav className="py-5 px-10 mb-12 flex justify-between w-screen fixed top-0 left-0 bg-gray-50">
+          <nav className="py-5 px-10 mb-12 z-100 flex justify-between w-screen fixed top-0 left-0 bg-gray-50">
             <h1 className="text-lg md:text-xl text-gray-600">{"{developedbysaheb}"}</h1>
-            <ul className="hidden lg:flex flex-row gap-x-8 items-center text-lg">
-              <li><BsFillMoonStarsFill className="cursor-pointer text-xl" /></li>
+            
+            <ul className="hidden lg:flex lg:flex-row sm:flex-col gap-x-8 items-center text-lg">
               <li><a href="#">About</a></li>
               <li><a href="#">Skills</a></li>
               <li><a href="#">Experience</a></li>
               <li><a href="#">Projects</a></li>
               <li><a href="#">Interests</a></li>
               <li><a href="#">Contact</a></li>
+              <li></li>
             </ul>
+            <FiAlignJustify className="lg:hidden text-3xl font-bold" />
           </nav>
 
           <div className="lg:flex justify-between mt-20 px-4 md:px-10 lg:px-0">
