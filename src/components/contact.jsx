@@ -54,7 +54,7 @@ export default function Contact() {
         <div className='hidden lg:block'>
           <Image src="./contactImg.svg" alt="Not Found" width={500} height={700} className="w-[580px] h-[600px]" />
         </div>
-        <div className='w-1/2 mt-36 md:mx-auto sm:mx-auto'>
+        <div className='w-full lg:w-1/2 mt-14 lg:mt-36 sm:mx-auto px-10'>
           <form onSubmit={onSubmit} className='flex flex-col'>
             <div className='flex justify-between'>
               <input type="text" name="name" placeholder='First Name' className=' h-10 px-5 w-full border-2' required />
@@ -69,16 +69,16 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="bg-gray-700 text-white flex items-center w-[200px] my-10 mx-auto rounded-2xl px-12 py-5 transition duration-300 ease-in-out transform hover:bg-gray-600 hover:scale-105"
+              className="bg-gray-700 text-white flex justify-center items-center w-[100px] my-10 mx-auto rounded-2xl px-12 py-3 transition duration-300 ease-in-out transform hover:bg-gray-600 hover:scale-105"
             >
-              Submit Form
+              Send
             </button>
             <ToastContainer />
           </form>
         </div>
 
       </div>
-      <h2 className='w-full text-center text-lg mt-12 text-gray-700'>
+      <h2 className='w-full text-center text-sm lg:text-lg mt-12 text-gray-700'>
         © {new Date().getFullYear()} Saheb Singh Chandok. All Rights Reserved.
       </h2>
 

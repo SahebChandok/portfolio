@@ -9,7 +9,7 @@ const Projects = () => {
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mt-20'>
                     <div className='max-w-[1100px] mx-auto flex flex-col lg:flex-row bg-gray-100 rounded-lg border-gray-300 border-2 mt-5 hover:shadow-2xl transition-shadow duration-300 shadow-lg'>
                         <div className='w-full flex items-center'>
-                            <Image src="/portfolio.png" alt="Not Found" width={1200} height={1200} className="px-5 py-10 lg:py-1" />
+                            <Image src="/portfolio.png" alt="Not Found" width={1200} height={1400} className="px-5 py-10 lg:py-1" />
                         </div>
                         <div className='w-full px-7'>
                             <h1 className='text-gray-700 font-bold text-2xl mt-5'>Portfolio Website</h1>
