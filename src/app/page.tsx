@@ -1,4 +1,5 @@
 'use client'
+import React, { useState } from 'react';
 import Head from "next/head";
 import Image from "next/image";
 import Link from 'next/link'
@@ -17,31 +18,24 @@ import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import Interest from "@/components/interest";
 import Contact from "@/components/contact";
+import NavBar from '@/components/navbar';
 
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleOpen = () => {
+    setIsOpen(open => !open);
+    console.log(isOpen)
+  }
+
   return (
-    <div>
-      <Head>
+    <div id="about">
+      <Head >
         <title>Saheb Chandok</title>
       </Head>
       <main>
-        <div id="about" className="text-gray-600 border-b-2 border-gray-200 max-w-[1400px] mx-auto">
-          <nav className="py-5 px-4 md:px-10 mb-12 z-50 flex justify-between w-screen fixed top-0 left-0 bg-gray-50">
-            <h1 className="text-lg md:text-xl text-gray-600">{"{developedbysaheb}"}</h1>
-            
-            <ul className="hidden lg:flex lg:flex-row sm:flex-col gap-x-8 items-center text-lg">
-              <li><a href="#about" className="hover:text-black">About</a></li>
-              <li><a href="#skills" className="hover:text-black">Skills</a></li>
-              <li><a href="#experience" className="hover:text-black">Experience</a></li>
-              <li><a href="#projects" className="hover:text-black">Projects</a></li>
-              <li><a href="#interests" className="hover:text-black">Interests</a></li>
-              <li><a href="#contact" className="hover:text-black">Contact</a></li>
-              <li></li>
-            </ul>
-            <FiAlignJustify className="lg:hidden text-3xl font-bold" />
-          </nav>
-
+        <div  className="text-gray-600 border-b-2 border-gray-200 max-w-[1400px] mx-auto">
+          <NavBar />
           <div className="lg:flex justify-between mt-20 px-4 md:px-10 lg:px-0">
             <div className="hidden lg:flex flex-col items-center justify-center">
               <ul>
