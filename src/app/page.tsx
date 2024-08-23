@@ -26,17 +26,17 @@ export default function Home() {
         <title>Saheb Chandok</title>
       </Head>
       <main>
-        <div className="text-gray-600 border-b-2 border-gray-200 max-w-[1400px] mx-auto">
-          <nav className="py-5 px-4 md:px-10 mb-12 z-100 flex justify-between w-screen fixed top-0 left-0 bg-gray-50">
+        <div id="about" className="text-gray-600 border-b-2 border-gray-200 max-w-[1400px] mx-auto">
+          <nav className="py-5 px-4 md:px-10 mb-12 z-50 flex justify-between w-screen fixed top-0 left-0 bg-gray-50">
             <h1 className="text-lg md:text-xl text-gray-600">{"{developedbysaheb}"}</h1>
             
             <ul className="hidden lg:flex lg:flex-row sm:flex-col gap-x-8 items-center text-lg">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Experience</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Interests</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about" className="hover:text-black">About</a></li>
+              <li><a href="#skills" className="hover:text-black">Skills</a></li>
+              <li><a href="#experience" className="hover:text-black">Experience</a></li>
+              <li><a href="#projects" className="hover:text-black">Projects</a></li>
+              <li><a href="#interests" className="hover:text-black">Interests</a></li>
+              <li><a href="#contact" className="hover:text-black">Contact</a></li>
               <li></li>
             </ul>
             <FiAlignJustify className="lg:hidden text-3xl font-bold" />
@@ -88,9 +88,9 @@ export default function Home() {
                 &quot;I&apos;m a Software Developer with over a year of experience in the IT industry. Currently, I am pursuing a Master&apos;s degree in Applied Computer Science from Concordia University, Canada. Feel free to explore my projects and get in touch.&quot;
               </p>
 
-              <button className="bg-gray-700 text-white flex items-center my-12 rounded-2xl px-7 py-5">
+              <a className="bg-gray-700 text-white flex items-center my-12 rounded-2xl px-7 py-5 w-[159.08px] hover:cursor-pointer" href="#contact">
                 Say Hello <FaRegPaperPlane className="ml-4" />
-              </button>
+              </a>
               
               <p className="md:hidden">Connect With Me !</p>
               <div className="md:hidden flex flex-row items-center mt-10">

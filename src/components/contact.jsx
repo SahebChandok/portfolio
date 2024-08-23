@@ -48,7 +48,7 @@ export default function Contact() {
   };
 
   return (
-    <div className='container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1400px]'>
+    <div id='contact' className='container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1400px]'>
       <h2 className='text-4xl font-bold text-center mb-8 text-gray-700'>Contact Me</h2>
       <div className='flex flex-row justify-between'>
         <div className='hidden lg:block'>

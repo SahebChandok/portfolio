@@ -25,7 +25,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1400px]">
+    <div id='experience' className="container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1400px]">
       <h2 className="text-4xl font-bold text-center mb-8 text-gray-700">Experience</h2>
       <div className='lg:px-48'>
         <Timeline position={isLargeScreen ? "alternate" : undefined}
@@ -43,14 +43,14 @@ const Experience = () => {
             </TimelineSeparator>
             <TimelineContent>
               <div className='flex'>
-                <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 justify-start w-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ' onClick={() => openModal(1)}>
+                <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 justify-start w-full shadow-lg hover:cursor-pointer hover:shadow-2xl transition-shadow duration-300 ' onClick={() => openModal(1)}>
                   <div className='items-center my-auto'>
-                    <Image src="/concordia.png" alt="Not Found" width={500} height={700} className="w-[50px] h-[50px]" />
+                    <Image src="/concordia.png" alt="Not Found" width={500} height={700} className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]" />
                   </div>
                   <div className='ml-10'>
-                    <p className='text-gray-700 font-bold'>MS in Computer Science</p>
-                    <p className='mt-3'>Concordia University, Canada</p>
-                    <p>Sept 2023 - Present</p>
+                    <p className='text-gray-700 font-bold text-sm md:text-lg'>MS in Computer Science</p>
+                    <p className='mt-3 text-sm md:text-lg'>Concordia University, Canada</p>
+                    <p className='text-sm md:text-lg'>Sept 2023 - Present</p>
                   </div>
                 </div>
               </div>
@@ -77,14 +77,14 @@ const Experience = () => {
             </TimelineSeparator>
             <TimelineContent>
               <div className='flex justify-end'>
-                <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 w-full shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(2)}>
+                <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 w-full shadow-lg hover:cursor-pointer hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(2)}>
                   <div className='items-center my-auto'>
-                    <Image src="/Oracle.png" alt="Not Found" width={500} height={700} className="w-[70px] h-[70px] rounded-full" />
+                    <Image src="/Oracle.png" alt="Not Found" width={500} height={700} className="h-[40px] w-[40px] md:w-[70px] md:h-[70px] rounded-full" />
                   </div>
                   <div className='ml-10 justify-end w-full'>
-                    <p className='text-gray-700 font-bold'>Software Developer</p>
-                    <p className='mt-3'>Oracle, India</p>
-                    <p>July 2022 - August 2023</p>
+                    <p className='text-gray-700 font-bold text-sm md:text-lg'>Software Developer</p>
+                    <p className='mt-3 text-sm md:text-lg'>Oracle, India</p>
+                    <p className='text-sm md:text-lg'>July 2022 - August 2023</p>
                   </div>
                 </div>
               </div>
@@ -111,14 +111,14 @@ const Experience = () => {
             </TimelineSeparator>
             <TimelineContent>
               <div className='flex'>
-                <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 justify-start w-full shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(3)}>
+                <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 justify-start w-full hover:cursor-pointer shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(3)}>
                   <div className='items-center my-auto'>
-                    <Image src="/aic.png" alt="Not Found" width={500} height={700} className="w-[70px] h-[70px]" />
+                    <Image src="/aic.png" alt="Not Found" width={500} height={700} className="w-[40px] h-[40px] md:w-[70px] md:h-[70px]" />
                   </div>
                   <div className='ml-10'>
-                    <p className='text-gray-700 font-bold'>Web Developer Intern</p>
-                    <p className='mt-3'>Ask In City, India</p>
-                    <p>Oct 2020 - Dec 2020</p>
+                    <p className='text-gray-700 font-bold text-sm md:text-lg'>Web Developer Intern</p>
+                    <p className='mt-3 text-sm md:text-lg'>Ask In City, India</p>
+                    <p className='text-sm md:text-lg'>Oct 2020 - Dec 2020</p>
                   </div>
                 </div>
               </div>
@@ -144,14 +144,14 @@ const Experience = () => {
             </TimelineSeparator>
             <TimelineContent>
               <div className='flex justify-end'>
-                <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 w-full shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(4)}>
+                <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 w-full hover:cursor-pointer shadow-lg hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(4)}>
                   <div className='items-center my-auto'>
-                    <Image src="/IIIT.png" alt="Not Found" width={500} height={700} className="w-[70px] h-[70px]" />
+                    <Image src="/IIIT.png" alt="Not Found" width={500} height={700} className="h-[40px] w-[40px] md:w-[70px] md:h-[70px]" />
                   </div>
                   <div className='ml-10 justify-end w-full'>
-                    <p className='text-gray-700 font-bold'>B.E. in Information Technology</p>
-                    <p className='mt-3'>Savitribai Phule Pune University, India</p>
-                    <p>June 2018 - July 2022</p>
+                    <p className='text-gray-700 font-bold text-sm md:text-lg'>B.E. in Information Technology</p>
+                    <p className='mt-3 text-sm md:text-lg'>Pune University, India</p>
+                    <p className='text-sm md:text-lg'>June 2018 - July 2022</p>
                   </div>
                 </div>
               </div>
