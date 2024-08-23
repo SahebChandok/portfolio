@@ -27,7 +27,7 @@ const Experience = () => {
   return (
     <div id='experience' className="container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1400px]">
       <h2 className="text-4xl font-bold text-center mb-8 text-gray-700">Experience</h2>
-      <div className='lg:px-48'>
+      <div className='lg:px-48 mt-5'>
         <Timeline position={isLargeScreen ? "alternate" : undefined}
           sx={!isLargeScreen ? {
             [`& .${timelineItemClasses.root}:before`]: {

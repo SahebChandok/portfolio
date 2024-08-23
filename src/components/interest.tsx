@@ -5,7 +5,7 @@ const Interest = () => {
         <div>
             <div id='interests' className='container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1400px]'>
                 <h2 className="text-4xl font-bold text-center mb-8 text-gray-700">Interests</h2>
-                <div className="grid grid-cols-3 lg:grid-cols-6 gap-8 mt-20">
+                <div className="grid grid-cols-3 lg:grid-cols-6 gap-8 mt-14">
 
                     <div className='flex flex-col text-center hover:backdrop-blur-lg hover:shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out'>
                         <div className='flex items-center justify-center'>

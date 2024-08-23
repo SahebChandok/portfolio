@@ -5,7 +5,7 @@ function Skills() {
     <div id='skills' className="container mx-auto px-4 pt-16 pb-24 mb-10 mt-30 border-b-2 border-gray-200 max-w-[1400px]">
       <h2 className="text-4xl font-bold text-center mb-8 text-gray-700">Skills</h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-5">
         <div className="bg-gray-100 p-6 rounded-lg border-gray-300 border-2">
           <h3 className="text-lg font-semibold text-center mb-6">Front End</h3>
           <div className="grid grid-cols-5 gap-6 text-center mb-10">
