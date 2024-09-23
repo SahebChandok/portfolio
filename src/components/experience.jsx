@@ -61,7 +61,7 @@ const Experience = () => {
                     <div className='flex flex-col items-center justify-between bg-white p-10 rounded max-w-[750px]'>
                       <h3 className='text-2xl font-medium tracking-wider'>Masters in Applied Computer Science</h3>
                       <p className='my-8 text-xl'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, tempore consequuntur nihil vitae obcaecati distinctio minima nemo necessitatibus assumenda dolorum labore architecto temporibus veniam dicta mollitia, et voluptas commodi. Quidem.
+                        Currently I am pursuing Masters in Applied Computer Science at Concordia University. This will help me have a deper understanding of software development
                       </p>
                       <button id="close-modal-btn" className='bg-red-500 text-white py-3 px-10 rounded' onClick={closeModal}>Close</button>
                     </div>
