@@ -61,7 +61,7 @@ const Experience = () => {
                     <div className='flex flex-col items-center justify-between bg-white p-10 rounded max-w-[750px]'>
                       <h3 className='text-2xl font-medium tracking-wider'>Masters in Applied Computer Science</h3>
                       <p className='my-8 text-xl'>
-                        Currently I am pursuing Masters in Applied Computer Science at Concordia University. This will help me have a deper understanding of software development
+                      I am currently pursuing a M.Sc in Applied Computer Science at Concordia University, where I am enhancing my technical and problem-solving skills through advanced coursework and hands-on projects. My studies focus on software development, algorithms, and modern computing technologies, preparing me to excel in the dynamic field of computer science.
                       </p>
                       <button id="close-modal-btn" className='bg-red-500 text-white py-3 px-10 rounded' onClick={closeModal}>Close</button>
                     </div>
@@ -94,8 +94,8 @@ const Experience = () => {
                   <div className='flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-20 transition-all'>
                     <div className='flex flex-col items-center justify-between bg-white p-10 rounded max-w-[750px]'>
                       <h3 className='text-2xl font-medium tracking-wider'>Software Developer</h3>
-                      <p className='my-8 text-xl'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, tempore consequuntur nihil vitae obcaecati distinctio minima nemo necessitatibus assumenda dolorum labore architecto temporibus veniam dicta mollitia, et voluptas commodi. Quidem.
+                      <p className='my-8 text-xl text-left'>
+                      I played a key role in a high-impact project, leading the development of user-friendly interface screens for a major financial institution. I implemented modern technologies, optimized workflows, and enhanced the overall user experience. Additionally, I led a team of interns, driving the project from design to deployment while ensuring seamless migration to a new tech stack.
                       </p>
                       <button id="close-modal-btn" className='bg-red-500 text-white py-3 px-10 rounded' onClick={closeModal}>Close</button>
                     </div>
@@ -128,7 +128,7 @@ const Experience = () => {
                     <div className='flex flex-col items-center justify-between bg-white p-10 rounded max-w-[750px]'>
                       <h3 className='text-2xl font-medium tracking-wider'>Web Developer Intern</h3>
                       <p className='my-8 text-xl'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, tempore consequuntur nihil vitae obcaecati distinctio minima nemo necessitatibus assumenda dolorum labore architecto temporibus veniam dicta mollitia, et voluptas commodi. Quidem.
+                      I contributed to the development of responsive and interactive websites by translating UI designs into functional frontend code, ensuring a seamless user experience. I collaborated closely with the development team to implement design specifications, optimizing the websites for performance and accessibility. By utilizing modern web technologies, I helped enhance the overall functionality and visual appeal of the sites.
                       </p>
                       <button id="close-modal-btn" className='bg-red-500 text-white py-3 px-10 rounded' onClick={closeModal}>Close</button>
                     </div>
@@ -161,8 +161,8 @@ const Experience = () => {
                   <div className='flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-20 transition-all'>
                     <div className='flex flex-col items-center justify-between bg-white p-10 rounded max-w-[750px]'>
                       <h3 className='text-2xl font-medium tracking-wider'>Bachelor of Engineering in Information Technology</h3>
-                      <p className='my-8 text-xl'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, tempore consequuntur nihil vitae obcaecati distinctio minima nemo necessitatibus assumenda dolorum labore architecto temporibus veniam dicta mollitia, et voluptas commodi. Quidem.
+                      <p className='my-8 text-xl text-left'>
+                      I completed my Bachelor of Engineering in Information Technology, building a strong foundation in areas like databases, networks, algorithms, and software engineering. During my later years, I worked on one key project: 'Detection of Cyber and Network Attacks using machine learning algorithms'. These experiences solidified my interest in full-stack development and machine learning, allowing me to apply my theoretical knowledge to real-world challenges.
                       </p>
                       <button id="close-modal-btn" className='bg-red-500 text-white py-3 px-10 rounded' onClick={closeModal}>Close</button>
                     </div>
