@@ -162,7 +162,7 @@ const Experience = () => {
                     <div className='flex flex-col items-center justify-between bg-white p-10 rounded max-w-[750px]'>
                       <h3 className='text-2xl font-medium tracking-wider'>Bachelor of Engineering in Information Technology</h3>
                       <p className='my-8 text-xl text-left'>
-                      I completed my Bachelor of Engineering in Information Technology, building a strong foundation in areas like databases, networks, algorithms, and software engineering. During my later years, I worked on one key project: 'Detection of Cyber and Network Attacks using machine learning algorithms'. These experiences solidified my interest in full-stack development and machine learning, allowing me to apply my theoretical knowledge to real-world challenges.
+                      I completed my Bachelor of Engineering in Information Technology, building a strong foundation in areas like databases, networks, algorithms, and software engineering. During my later years, I worked on one key project: &quot;Detection of Cyber and Network Attacks using machine learning algorithms&quot;. These experiences solidified my interest in full-stack development and machine learning, allowing me to apply my theoretical knowledge to real-world challenges.
                       </p>
                       <button id="close-modal-btn" className='bg-red-500 text-white py-3 px-10 rounded' onClick={closeModal}>Close</button>
                     </div>
