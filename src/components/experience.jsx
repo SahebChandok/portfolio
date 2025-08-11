@@ -42,6 +42,40 @@ const Experience = () => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
+              <div className='flex justify-end'>
+                <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 w-full shadow-lg hover:cursor-pointer hover:shadow-2xl transition-shadow duration-300' onClick={() => openModal(0)}>
+                  <div className='items-center my-auto'>
+                    <Image src="/fig.png" alt="Not Found" width={500} height={700} className="h-[40px] w-[40px] md:w-[70px] md:h-[70px] rounded-full" />
+                  </div>
+                  <div className='ml-10 justify-end w-full'>
+                    <p className='text-gray-700 font-bold text-sm md:text-lg'>Software Developer</p>
+                    <p className='mt-3 text-sm md:text-lg'>Fig, Canada</p>
+                    <p className='text-sm md:text-lg'>Dec 2023 - Present</p>
+                  </div>
+                </div>
+              </div>
+
+              {openModalId === 0 && (
+                <div id="modal-wrapper" className='fixed z-10 inset-0'>
+                  <div className='flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-20 transition-all'>
+                    <div className='flex flex-col items-center justify-between bg-white p-10 rounded max-w-[750px]'>
+                      <h3 className='text-2xl font-medium tracking-wider'>Software Developer</h3>
+                      <p className='my-8 text-xl text-left'>
+                      Developed scalable backend APIs for a financial services platform using Java, Spring Boot, and MySQL, with Redis caching for performance optimization. Built features including loan eligibility checks, transaction processing, and a configurable rule engine for credit policies and fraud detection. Implemented a risk detection module and set up monitoring/logging with AWS CloudWatch. Collaborated in Agile sprints, delivering features, tests, and documentation.
+                      </p>
+                      <button id="close-modal-btn" className='bg-red-500 text-white py-3 px-10 rounded' onClick={closeModal}>Close</button>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
               <div className='flex'>
                 <div className='flex bg-gray-100 p-6 rounded-lg border-gray-300 border-2 justify-start w-full shadow-lg hover:cursor-pointer hover:shadow-2xl transition-shadow duration-300 ' onClick={() => openModal(1)}>
                   <div className='items-center my-auto'>
@@ -50,7 +84,7 @@ const Experience = () => {
                   <div className='ml-10'>
                     <p className='text-gray-700 font-bold text-sm md:text-lg'>MS in Computer Science</p>
                     <p className='mt-3 text-sm md:text-lg'>Concordia University, Canada</p>
-                    <p className='text-sm md:text-lg'>Sept 2023 - Present</p>
+                    <p className='text-sm md:text-lg'>Sept 2023 - May 2025</p>
                   </div>
                 </div>
               </div>

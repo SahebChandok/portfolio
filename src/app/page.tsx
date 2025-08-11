@@ -79,7 +79,7 @@ export default function Home() {
               </div>
 
               <p className="text-l lg:text-xl mt-5 w-fit">
-                &quot;I&apos;m a Software Developer with over a year of experience in the IT industry. Currently, I am pursuing a Master&apos;s degree in Applied Computer Science from Concordia University, Canada. Feel free to explore my projects and get in touch.&quot;
+                &quot;I&apos;m a Software Developer with 4 plus years of experience in the IT industry. Currently, I am pursuing a Master&apos;s degree in Applied Computer Science from Concordia University, Canada. Feel free to explore my projects and get in touch.&quot;
               </p>
 
               <a className="bg-gray-700 text-white flex items-center my-12 rounded-2xl px-7 py-5 w-[159.08px] hover:cursor-pointer" href="#contact">
